@@ -1,1 +1,0 @@
-return group_map
