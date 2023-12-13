@@ -5,8 +5,8 @@ class Solution(object):
             for w in weights:
                 count += w 
                 if count > mid:
-                  current_days += 1
-                  count = w
+                    current_days += 1
+                    count = w
             return current_days <=  days
         
         low = max(weights)
