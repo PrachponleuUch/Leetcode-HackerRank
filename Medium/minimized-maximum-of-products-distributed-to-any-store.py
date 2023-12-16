@@ -3,7 +3,7 @@ class Solution(object):
         def helper(mid):
             count = 0
             for q in quantities:
-              # If there's a remainder add 1, else 0 {True: 1, False: 0}
+            # If there's a remainder add 1, else 0 {True: 1, False: 0}
                 count += (q//mid) + (q%mid > 0)
             return count <= n
 
