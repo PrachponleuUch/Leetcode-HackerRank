@@ -20,4 +20,3 @@ def findMatrix(nums):
   :rtype: List[List[int]]
   """
         
-findMatrix([1,3,4,1,2,3,1])

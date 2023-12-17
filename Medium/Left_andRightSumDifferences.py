@@ -13,4 +13,3 @@ def leftRightDifference( nums):
     :rtype: List[int]
     """
 
-print(leftRightDifference([10,4,8,3]))
