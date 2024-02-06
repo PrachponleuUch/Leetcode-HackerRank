@@ -1,11 +1,20 @@
+import bisect
 class Solution(object):
     def kthSmallest(self, matrix, k):
-        array = []
-        for i in range(len(matrix)):
-            array += matrix[i]
-        array.sort()
-        return array[k-1]
-        
+        l, h = matrix[0][0], matrix[-1][-1]
+        def condition(m):
+            count = 0
+            for i in range(len(matrix)):
+                x = bisect.bisect_right(matrix[i], m)
+                count += x
+            return count < k
+        while l < h:
+            mid = (h + l)//2
+            if condition(mid):
+                l = mid + 1
+            else:
+                h = mid
+        return l
         """
         :type matrix: List[List[int]]
         :type k: int
