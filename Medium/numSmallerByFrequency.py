@@ -23,3 +23,4 @@ class Solution:
         for q in qFreq:
             answer.append(n - bisect.bisect_right(wFreq, q))
         return answer
+      
