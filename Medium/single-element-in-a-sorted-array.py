@@ -7,3 +7,5 @@ class Solution:
             if ((nums[i] + nums[i+1])/2) != nums[i]:
                 return nums[i]
         return nums[-1]
+
+# 10 mins
