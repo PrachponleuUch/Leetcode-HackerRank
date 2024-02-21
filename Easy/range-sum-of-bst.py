@@ -16,6 +16,6 @@ class Solution:
             helper(root.left, low, high)
             helper(root.right, low, high)
         
-        helper(root, low, high)
+        helper(root, low, high) 
         return answer
         
