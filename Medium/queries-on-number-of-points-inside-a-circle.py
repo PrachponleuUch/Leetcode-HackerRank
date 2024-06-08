@@ -13,4 +13,4 @@ class Solution(object):
         :type queries: List[List[int]]
         :rtype: List[int]
         """
-        
+# Distance from center to point must be equal to or less than radius
